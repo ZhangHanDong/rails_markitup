@@ -12,24 +12,39 @@ Rails3.0.8+/Ruby1.8.7+
 Usage:
 ------
 
-1. rails g rails_markitup:install
-2. in layout:
-  * = stylesheet_link_tag :markitup
-  * = javascript_include_tag :markitup
-3. in your textarea place the following div:
+1.  **In you Gemfile:**
 
-    * :id => 'markdown'
+   >gem "redcarpet"
 
-4. in your application.js:
+   >gem "albino"
+
+   >gem "nokogiri"
+
+   >gem 'rails_markitup'
+
+2. run :
+
+  > rails g rails_markitup:install
+
+3. in layout:
+
+  > = stylesheet_link_tag :markitup
+
+  > = javascript_include_tag :markitup
+
+4. in your textarea , simple\_form\_for exapmle:
+
+    > = form.input :content, :as => :text, :input_html => {:id => 'markdown'} 
+
+5. in your application.js:
 
 >$(document).ready(function(){
 >
 >    $('#markdown').markItUp(myMarkdownSettings);
 >
->
 >});
 
 5. in your show page:
 
-    * = markdown(@topic.content)
+    > = markdown(@topic.content)
 
