@@ -1,7 +1,7 @@
 A MarkDown TextEditor with jQuery and Markitup! and redcarpet for Rails 3
 =========================================================================
 
-__use: [Markitup](http://markitup.jaysalvat.com/ "Markitup")__
+__use: [Markitup](http://markitup.jaysalvat.com/ "Markitup")__ and [Redcarpet](https://github.com/tanoku/redcarpet "Redcarpet")
 
 __[Demo](http://markitup.jaysalvat.com/downloads/demo.php?id=markupsets/markdown)__
 
