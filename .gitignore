@@ -10,3 +10,4 @@ lib/generators/rails_markitup/.DS_Store
 lib/generators/rails_markitup/media/.DS_Store
 lib/generators/rails_markitup/media/images/.DS_Store
 lib/generators/rails_markitup/media/javascripts/.DS_Store
+lib/rails_markitup/.DS_Store
