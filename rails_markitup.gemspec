@@ -21,6 +21,8 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_dependency "rails", "3.0.8"
   s.add_dependency "redcarpet"
+  s.add_dependency "albino"
+  s.add_dependency "nokogiri"
   
   s.add_development_dependency 'rspec', ['>= 0']
   s.add_development_dependency 'rspec-rails', ['>= 0']
