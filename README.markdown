@@ -14,37 +14,31 @@ Usage:
 
 1.  **In you Gemfile:**
 
-   >gem "redcarpet"
-
-   >gem "albino"
-
-   >gem "nokogiri"
-
-   >gem 'rails_markitup'
+    gem "redcarpet"
+    gem "albino"
+    gem "nokogiri"
+    gem 'rails_markitup'
 
 2. run :
 
-  > rails g rails_markitup:install
+    rails g rails_markitup:install
 
 3. in layout:
 
-  > = stylesheet_link_tag :markitup
-
-  > = javascript_include_tag :markitup
+    = stylesheet_link_tag :markitup
+    = javascript_include_tag :markitup
 
 4. in your textarea , simple\_form\_for exapmle:
 
-    > = form.input :content, :as => :text, :input_html => {:id => 'markdown'} 
+    = form.input :content, :as => :text, :input_html => {:id => 'markdown'} 
 
 5. in your application.js:
 
->$(document).ready(function(){
->
->    $('#markdown').markItUp(myMarkdownSettings);
->
->});
+    $(document).ready(function(){
+      $('#markdown').markItUp(myMarkdownSettings);
+    });
 
-5. in your show page:
+6. in your show page:
 
-    > = markdown(@topic.content)
+    = markdown(@topic.content)
 
