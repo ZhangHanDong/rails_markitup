@@ -11,6 +11,10 @@ Rails3.0.8+/Ruby1.8.7+
 
 ## Usage:
 
+**you need install pygments**
+
+    easy_install pygments
+
 a. In Gemfile:
 
     gem "redcarpet"
@@ -27,6 +31,10 @@ c. In layout:
     = stylesheet_link_tag :markitup
     = javascript_include_tag :markitup
 
+    or you can use another highlight css:
+
+    = stylesheet_link_tag :markitup_shiny
+
 d. In your textarea , simple\_form\_for exapmle:
 
     = form.input :content, :as => :text, :input_html => {:id => 'markdown'} 
@@ -40,4 +48,8 @@ e. In your application.js:
 f. In your show page:
 
     = markdown(@topic.content)
+
+    if you use shiny style
+
+    = markdown(@topic.content, 'shiny')
 
